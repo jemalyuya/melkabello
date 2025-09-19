@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Official website of MELKA BELLO district">
+    <meta name="keywords" content="Melka Bello, Oromia, Ethiopia, government services">
+    <meta name="author" content="MELKA BELLO Administration">
+    
+    <title>MELKA BELLO - Official Website</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512
+iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #6a1b9a;
+            --secondary-color: #4a148c;
+            --accent-color: #9c27b0;
+            --light-color: #f3e5f5;
+            --dark-color: #1a0033;
+            --text-color: #333;
+            --gradient: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            --sunset-gradient: linear-gradient(135deg, #ff7e5f, #feb47b);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Header Styles */
+        .top-header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 10px 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-container img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-container span {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: white;
+            margin-left: 15px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+        
+        .language-selector {
+            margin-left: 15px;
+        }
+        
+        .language-selector select {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 1em;
+            padding-right: 2rem;
+        }
+        
+        /* Navigation Styles */
+        .main-nav {
+            background-color: var(--primary-color);
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 10px;
+            padding: 15px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .dropdown-menu {
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .dropdown-item {
+            color: white;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-item:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .dropdown-submenu {
+            position: relative;
+        }
+        
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+        
+        /* Hero Section Styles */
+        .hero-section {
+            background: var(--gradient);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: bottom;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero-paragraph {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Image Carousel Styles */
+        .carousel-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .carousel-track {
+            display: flex;
+            animation: scroll 30s linear infinite;
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255,255,255,0.7);
+            color: var(--primary-color);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-control:hover {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .carousel-prev {
+            left: 10px;
+        }
+        
+        .carousel-next {
+            right: 10px;
+        }
+        
+        /* Buttons Section */
+        .buttons-section {
+            padding: 60px 0;
+            background: var(--sunset-gradient);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+            font-weight: 700;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+        }
+        
+        .custom-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            background-color: white;
+            color: var(--primary-color);
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+        
+        .custom-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            color: var(--secondary-color);
+        }
+        
+        /* Video Gallery Styles */
+        .video-section {
+            padding: 60px 0;
+            background-color: #f5f5f5;
+        }
+        
+        .video-gallery {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px 0;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+        
+        .video-gallery::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Edge */
+        }
+        
+        .video-item {
+            flex: 0 0 300px;
+            height: 200px;
+            margin-right: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .video-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .video-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .video-item:hover .video-overlay {
+            opacity: 1;
+        }
+        
+        .play-button {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .video-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .video-control-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .video-control-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        /* Video Buttons Section */
+        .video-buttons-section {
+            padding: 30px 0;
+            background-color: #f5f5f5;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .video-buttons-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .video-btn {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+        
+        .video-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            color: white;
+        }
+        
+        .video-btn i {
+            margin-right: 8px;
+        }
+        
+        /* Google Map Styles */
+        .map-section {
+            padding: 60px 0;
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Contact Form Styles */
+        .contact-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(106, 27, 154, 0.2);
+            outline: none;
+        }
+        
+        .file-upload {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .file-upload input[type=file] {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        
+        .file-upload-label {
+            display: block;
+            padding: 12px;
+            background-color: var(--light-color);
+            border: 2px dashed var(--primary-color);
+            border-radius: 5px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .file-upload:hover .file-upload-label {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .submit-btn {
+            background: var(--gradient);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        /* Login Form Styles */
+        .login-section {
+            padding: 60px 0;
+            background: var(--gradient);
+            color: white;
+        }
+        
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .login-form .form-control {
+            background-color: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+        }
+        
+        .login-form .form-control::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .login-form .form-control:focus {
+            background-color: rgba(255,255,255,0.3);
+            border-color: white;
+            box-shadow: 0 0 0 3px rgba(255,255,255,0.2);
+            color: white;
+        }
+        
+        .form-check {
+            margin-bottom: 20px;
+        }
+        
+        .form-check-input {
+            background-color: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        .form-check-label {
+            color: white;
+        }
+        
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .forgot-password:hover {
+            color: var(--light-color);
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-column h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+        
+        .social-icons {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+            font-size: 14px;
+        }
+        
+        /* Comments Section */
+        .comments-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .comment-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .comment-box {
+            width: 100%;
+            min-height: 120px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            resize: vertical;
+        }
+        
+        .comment-submit {
+            background: var(--gradient);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .comment-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .comments-list {
+            margin-top: 30px;
+        }
+        
+        .comment-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comment-author {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .comment-date {
+            font-size: 12px;
+            color: #999;
+            margin-left: 10px;
+        }
+        
+        .media-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .media-links a {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .media-links a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .media-links i {
+            margin-right: 8px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .carousel-slide {
+                height: 300px;
+            }
+            
+            .video-item {
+                flex: 0 0 250px;
+                height: 180px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-info {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-paragraph {
+                font-size: 1rem;
+            }
+            
+            .carousel-slide {
+                height: 250px;
+            }
+            
+            .video-item {
+                flex: 0 0 200px;
+                height: 150px;
+            }
+            
+            .footer-column {
+                margin-bottom: 30px;
+            }
+            
+            .custom-btn {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 1.5rem;
+            }
+            
+            .carousel-slide {
+                height: 200px;
+            }
+            
+            .video-item {
+                flex: 0 0 150px;
+                height: 120px;
+            }
+            
+            .video-buttons-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .video-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .custom-btn {
+                font-size: 12px;
+                padding: 8px 12px;
+                margin: 5px;
+            }
+            
+            .buttons-section .text-center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .top-header, .main-nav, .buttons-section, .video-section, .video-buttons-section, .map-section, .contact-section, .login-section, .comments-section, .footer {
+                display: none;
+            }
+            
+            .hero-section, .carousel-section {
+                display: block;
+            }
+            
+            body {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+            
+            .carousel-slide {
+                height: auto;
+                max-height: 400px;
+            }
+        }
+        
+        /* High Contrast Mode Support */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-color: #003366;
+                --secondary-color: #002244;
+                --accent-color: #0055aa;
+                --light-color: #e6f2ff;
+                --dark-color: #000;
+                --text-color: #000;
+            }
+            
+            .hero-section, .buttons-section, .login-section {
+                background: var(--primary-color);
+                color: white;
+            }
+            
+            .custom-btn, .video-btn {
+                background: white;
+                color: var(--primary-color);
+                border: 2px solid var(--primary-color);
+            }
+            
+            .form-control, .comment-box {
+                border: 2px solid var(--primary-color);
+            }
+        }
+        
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="logo-container">
+                        <img src="images0/logo.png.png" alt="MELKA BELLO Logo">
+                        <span>MELKA BELLO</span>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6">
+                    <div class="contact-info">
+                        <a href="tel:0983879595" aria-label="Phone number"><i class="fas fa-phone"></i> 0983879595</a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/0983879595" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="mailto:info@melkabello.gov.et" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <div class="language-selector">
+                            <select id="languageSelect" aria-label="Language selector">
+                                <option value="en">English</option>
+                                <option value="om">Afaan Oromoo</option>
+                                <option value="am">Amharic</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                            Waajjira Bulchiinsaa
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" aria-haspopup="true">Waajjiraalee Aanichaa <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Waajjira Qonnaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Barnootaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Fayyaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira CHU FI Daldala</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Bishaanii fi Albuudaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Daandii fi Loojistikii</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Galii</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Buusaa Gonofaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Gurmaa'insa ummataa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Af-yaa'ii</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Maallaqaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Waajjira Abbaa Alangaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Milishaa fi Nagayaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waajjira Poolisii</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" aria-haspopup="true">Bulchiinsa Gandootaa <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Biiftuu Oromiyaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Burqaa Nagayaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Caffee Jennetaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Fuullee Nagayaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Magaalaa Harawaacaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Waldaya Misoomaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Caffee Waltahaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Bokkoo Jaalalaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Biiftuu Nagayaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Dhooble</a></li>
+                                    <li><a class="dropdown-item" href="#">Tokkummaa Jaalalaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Ifabaas</a></li>
+                                    <li><a class="dropdown-item" href="#">Dhagayaa Balloo</a></li>
+                                    <li><a class="dropdown-item" href="#">Mullisaa Haqaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Makkanniisa</a></li>
+                                    <li><a class="dropdown-item" href="#">Dhaaba Kanniisaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Tokkummaan Kaanee</a></li>
+                                    <li><a class="dropdown-item" href="#">firii Qabsoo</a></li>
+                                    <li><a class="dropdown-item" href="#">Dirree Quufaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Magaalaa Haraw</a></li>
+                                    <li><a class="dropdown-item" href="#">Magaalaa Bareedaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Walqixxummaa Bilisummaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Haqa Mullis</a></li>
+                                    <li><a class="dropdown-item" href="#">Tokkummaa Bilisummaa</a></li>
+                                    <li><a class="dropdown-item" href="#">Magaalaa Jaajaa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                            Waa'ee Keenyaa
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="#">Argama Aanaichaa</a></li>
+                            <li><a class="dropdown-item" href="#">Haala Ummataa</a></li>
+                            <li><a class="dropdown-item" href="#">Haala Qilleensaa</a></li>
+                            <li><a class="dropdown-item" href="#">Haala midhaanii</a></li>
+                            <li><a class="dropdown-item" href="#">Haala Beeyladaa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nu qunnamaa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Oduu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">BAGA NAGAAN GARA MARSARIITII MALKAA BALLOOTTI NAGAAN DHUFTAN</h1>
+                <p class="hero-paragraph">Aanaan malkaa balloo biyya argama buna uumamaa, biyya albuudaan beekkamtuu fi iddoo argama holqa naasiol</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Image Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2 class="section-title">SUURAALEE</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" id="imageCarousel">
+                    <img src="imagesslide1/1.jpg" alt="Image 1" class="carousel-slide1">
+                    <img src="imagesslide1/2.jpg" alt="Image 2" class="carousel-slide2">
+                    <img src="imagesslide1/3.jpg" alt="Image 3" class="carousel-slide3">
+                    <img src="imagesslide1/4.jpg" alt="Image 4" class="carousel-slide4">
+                    <img src="imagesslide1/5.jpg" alt="Image 5" class="carousel-slide5">
+                     <img src="imagesslide1/6.jpg" alt="Image 1" class="carousel-slide1">
+                    <img src="imagesslide1/7.jpg" alt="Image 2" class="carousel-slide2">
+                    <img src="imagesslide1/8.jpg" alt="Image 3" class="carousel-slide3">
+                    <img src="imagesslide1/9.jpg" alt="Image 4" class="carousel-slide4">
+                    <img src="imagesslide1/10.jpg" alt="Image 5" class="carousel-slide5">
+                    <img src="imagesslide1/11.jpg" alt="Image 1" class="carousel-slide1">
+                    <img src="imagesslide1/12.jpg" alt="Image 2" class="carousel-slide2">
+                    <img src="imagesslide1/13.jpg" alt="Image 3" class="carousel-slide3">
+                    <img src="imagesslide1/14.jpg" alt="Image 4" class="carousel-slide4">
+                    
+
+
+
+
+
+                </div>
+                <button class="carousel-control carousel-prev" id="prevBtn" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control carousel-next" id="nextBtn" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Buttons Section -->
+    <section class="buttons-section">
+        <div class="container">
+            <h2 class="section-title">HUJII WALIIGALA</h2>
+            <div class="text-center">
+                <a href="#" class="custom-btn">BULCHIINSA GANDOOTAA</a>
+                <a href="#" class="custom-btn">PIROOJEKTIILEE</a>
+                <a href="#" class="custom-btn">HUJIILEE INISHEETIIVII</a>
+                <a href="#" class="custom-btn">employee monitoring system by screen map</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Gallery Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">SUUR-SAGALEE</h2>
+            <div class="video-gallery" id="videoGallery">
+                <div class="video-item">
+                    <video src="videos/1.mp4" aria-label="Video 1"></video>
+                    <div class="video-overlay">
+                        <div class="play-button" aria-label="Play video"><i class="fas fa-play"></i></div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video src="videos/2.mp4" aria-label="Video 2"></video>
+                    <div class="video-overlay">
+                        <div class="play-button" aria-label="Play video"><i class="fas fa-play"></i></div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video src="videos/3.mp4" aria-label="Video 3"></video>
+                    <div class="video-overlay">
+                        <div class="play-button" aria-label="Play video"><i class="fas fa-play"></i></div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video src="videos/4.mp4" aria-label="Video 4"></video>
+                    <div class="video-overlay">
+                        <div class="play-button" aria-label="Play video"><i class="fas fa-play"></i></div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" aria-label="Video 5"></video>
+                    <div class="video-overlay">
+                        <div class="play-button" aria-label="Play video"><i class="fas fa-play"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-controls">
+                <button class="video-control-btn" id="videoPrevBtn" aria-label="Previous videos"><i class="fas fa-chevron-left"></i></button>
+                <button class="video-control-btn" id="videoNextBtn" aria-label="Next videos"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Buttons Section -->
+    <section class="video-buttons-section">
+        <div class="container">
+            <div class="video-buttons-container">
+                <a href="#" class="video-btn"><i class="fas fa-tasks"></i> DANDEETTII ADDAA</a>
+                <a href="#" class="video-btn"><i class="fas fa-search"></i> JOB SEARCH</a>
+                <a href="#" class="video-btn"><i class="fas fa-industry"></i> OOMISHA BEEKSISUU</a>
+                <a href="#" class="video-btn"><i class="fas fa-graduation-cap"></i> ONLINE LEARNING</a>
+                <a href="#" class="video-btn"><i class="fas fa-passport"></i> DIYAASPOORAA</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Google Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">LAKKOOFSA GADOO</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15759.312773782676!2d41.355212282890484!3d9.079411294735095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1633fc2cae75672f%3A0xf78f588f3c75fa21!2sJaja!5e0!3m2!1sen!2set!4v1757926728185!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">NU HIRRA</h2>
+            <form class="contact-form" action="upload.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name" class="form-label visually-hidden">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required="" aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label visually-hidden">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required="" aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label visually-hidden">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required="" aria-required="true"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="file-upload">
+                        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.mp4,.mp3,.html" aria-label="File upload">
+                        <label for="file" class="file-upload-label">
+                            <i class="fas fa-cloud-upload-alt"></i> Choose File or Drag &amp; Drop
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Login Form Section -->
+    <section class="login-section">
+        <div class="container">
+            <h2 class="section-title">SIGN IN</h2>
+            <form class="login-form" action="login.php" method="post">
+                <div class="form-group">
+                    <label for="username" class="form-label visually-hidden">Username or Email</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username or Email" required="" aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label visually-hidden">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required="" aria-required="true">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <button type="submit" class="submit-btn">LOGIN</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Comments Section -->
+    <section class="comments-section">
+        <div class="container">
+            <h2 class="section-title">SANDUUQA YAADAA</h2>
+            <div class="comment-form">
+                <div class="form-group">
+                    <label for="commentText" class="form-label visually-hidden">Your Comment</label>
+                    <textarea class="comment-box" id="commentText" placeholder="Your Comment" aria-required="true"></textarea>
+                </div>
+                <button class="comment-submit" id="submitComment">POST COMMENT</button>
+            </div>
+            <div class="comments-list" id="commentsList">
+                <!-- Comments will be displayed here -->
+            </div>
+            <div class="media-links">
+                <h3 class="w-100 text-center mb-3">MIIDIYAA HAWAASAA</h3>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://t.me" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+                <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://imo.im" target="_blank"><i class="fab fa-imo"></i> Imo</a>
+                <a href="https://skype.com" target="_blank"><i class="fab fa-skype"></i> Skype</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-column">
+                    <h3>RELATED SECTORS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Waajjira Bulchiinsa Godina Harargee Bahaa</a></li>
+                        <li><a href="#">Waajjira Qonna Godina Harargee</a></li>
+                        <li><a href="#">Waajjira Barnoota Godina Harargee Bahaa</a></li>
+                        <li><a href="#">Waajjira CHU FI Daldalaa Godina Harargee Bahaa</a></li>
+                        <li><a href="#">Waajjira Fayyaa Godina Harargee Bahaa</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-column">
+                    <h3>KANAAN NU QUNNAMAA</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+251983879595"><i class="fas fa-phone"></i> Phone call us on +251983879595</a></li>
+                        <li><a href="mailto:info@melkabello.gov.et"><i class="fas fa-envelope"></i> E-mail</a></li>
+                        <li><a href="http://www.melkabello.gov.et"><i class="fas fa-globe"></i> Website: www.melkabello.gov.et</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/0983879595" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://imo.im" target="_blank" aria-label="Imo"><i class="fab fa-imo"></i></a>
+                        <a href="https://skype.com" target="_blank" aria-label="Skype"><i class="fab fa-skype"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-column">
+                    <h3>HIDHATA MARSARIITII</h3>
+                    <ul class="footer-links">
+                        <li><a href="http://www.oromia.gov.et" target="_blank">www.oromia.gov.et</a></li>
+                        <li><a href="http://www.oromiacommunication.gov.et" target="_blank">www.oromiacommunication.gov.et</a></li>
+                        <li><a href="http://www.oeb.gov.et" target="_blank">www.oeb.gov.et</a></li>
+                        <li><a href="http://www.ivestinoromia.et" target="_blank">www.ivestinoromia.et</a></li>
+                        <li><a href="http://www.oromiatourism.gov.et" target="_blank">www.oromiatourism.gov.et</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 MELKA BELLO. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap
